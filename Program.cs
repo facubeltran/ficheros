@@ -63,17 +63,17 @@
                     if (i < 10) 
                     {
                         legajo = $"00{rand(9)}{i}";
-                        nombre = $"Juan Ramirez0{i} ";
+                        nombre = $"Juan Ramirez Gauss0{i} ";
                     }
                     else
                     {
                         legajo = $"0{rand(9)}{i}";
-                        nombre = $"Juan Ramirez{i} ";
+                        nombre = $"Juan Ramirez Gauss{i} ";
                     }
 
                     Categoria cat = categorias[rand(4)];
                     string categoriaT = $"0{cat.TipoCategoria}";
-                    string cuenta = $"000{rand(9)}{rand(9)}{rand(9)}{rand(9)}";
+                    string cuenta = $"{rnd.Next(1,9)}0{rand(9)}0{rand(9)}0{rand(9)}";
                     //Write a line of text
                     sw.WriteLine($"{legajo}{nombre}{categoriaT}{cuenta}");
 
@@ -100,8 +100,55 @@
             {
                 Console.WriteLine("Executing finally block.");
             }
+
+            try
+            {
+
+                string Empresa = "BANCO S INTERNACIONAL";
+                string Cuenta = "2345532";
+                int cantidadEmpleados = 0;
+                double totalSueldo = 0;
+
+                //Pass the filepath and filename to the StreamWriter Constructor
+                StreamReader srSueldos = new StreamReader("C:\\Users\\facubeltran\\Desktop\\reposgit\\bdt\\vv\\Empleados.txt");
+                StreamWriter swSueldos = new StreamWriter("C:\\Users\\facubeltran\\Desktop\\reposgit\\bdt\\vv\\Sueldos.txt");
+                swSueldos.WriteLine($"{Empresa};{Cuenta}");
+                line = srSueldos.ReadLine();
+                //Continue to read until you reach end of file
+                while (line != null)
+                {
+                    int cuenta = int.Parse(line.Substring(27,7));
+                    string nombre = line.Substring(4, 20);
+                    int catInt = int.Parse(line.Substring(25, 2));
+                    //write the line to console window
+                    double sueldo = categorias.Find(sue => sue.TipoCategoria == catInt).Sueldo;
+                    
+                    
+                    //DETALLE
+                    swSueldos.WriteLine($"{cuenta};{nombre};{sueldo}");
+                    ++cantidadEmpleados;
+                    totalSueldo += sueldo;
+                    line = srSueldos.ReadLine();
+
+                    
+                }
+
+                Categoria cat = categorias[rand(4)];
+                double totalRedondeado = Math.Round(totalSueldo, 2);
+                swSueldos.WriteLine($"{cantidadEmpleados};{totalRedondeado}");
+                srSueldos.Close();
+                swSueldos.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Executing finally block.");
+            }
             //******************************
-           
+
 
         }
 
