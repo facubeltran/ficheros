@@ -1,0 +1,15 @@
+C:\Users\facubeltran\source\repos\fichero\bin\Debug\net7.0\fichero.exe
+C:\Users\facubeltran\source\repos\fichero\bin\Debug\net7.0\fichero.deps.json
+C:\Users\facubeltran\source\repos\fichero\bin\Debug\net7.0\fichero.runtimeconfig.json
+C:\Users\facubeltran\source\repos\fichero\bin\Debug\net7.0\fichero.dll
+C:\Users\facubeltran\source\repos\fichero\bin\Debug\net7.0\fichero.pdb
+C:\Users\facubeltran\source\repos\fichero\obj\Debug\net7.0\fichero.csproj.AssemblyReference.cache
+C:\Users\facubeltran\source\repos\fichero\obj\Debug\net7.0\fichero.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\facubeltran\source\repos\fichero\obj\Debug\net7.0\fichero.AssemblyInfoInputs.cache
+C:\Users\facubeltran\source\repos\fichero\obj\Debug\net7.0\fichero.AssemblyInfo.cs
+C:\Users\facubeltran\source\repos\fichero\obj\Debug\net7.0\fichero.csproj.CoreCompileInputs.cache
+C:\Users\facubeltran\source\repos\fichero\obj\Debug\net7.0\fichero.dll
+C:\Users\facubeltran\source\repos\fichero\obj\Debug\net7.0\refint\fichero.dll
+C:\Users\facubeltran\source\repos\fichero\obj\Debug\net7.0\fichero.pdb
+C:\Users\facubeltran\source\repos\fichero\obj\Debug\net7.0\fichero.genruntimeconfig.cache
+C:\Users\facubeltran\source\repos\fichero\obj\Debug\net7.0\ref\fichero.dll
